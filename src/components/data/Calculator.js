@@ -1,7 +1,7 @@
 import Units from './Units.js';
 import Bedrooms from './Bedrooms.js';
 
-function Calculator(sqft) {
+function Calculator(inputs) {
 
   let result = {};
   result['Calculator for new appliances'] = {};
