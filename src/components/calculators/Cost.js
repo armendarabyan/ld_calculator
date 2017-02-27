@@ -34,52 +34,52 @@ export default class Cost extends React.Component {
           <TableBody displayRowCheckbox={false}>
 			<TableRow>
 				<TableRowColumn>Cost of Electricity - Washing Machine</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
+				<TableRowColumn>{this.props.output_data ? this.props.output_data['Cost of Electricity - Washing Machine']['Per load'] : ''}</TableRowColumn>
+				<TableRowColumn>{this.props.output_data ? this.props.output_data['Cost of Electricity - Washing Machine']['Per week'] : ''}</TableRowColumn>
+				<TableRowColumn>{this.props.output_data ? this.props.output_data['Cost of Electricity - Washing Machine']['Per month'] : ''}</TableRowColumn>
+				<TableRowColumn>{this.props.output_data ? this.props.output_data['Cost of Electricity - Washing Machine']['Per Year'] : ''}</TableRowColumn>
 			</TableRow>
 			<TableRow >
 				<TableRowColumn>Cost of Water</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
+				<TableRowColumn>{this.props.output_data ? this.props.output_data['Cost of Water']['Per load'] : ''}</TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Cost of Water']['Per week'] : ''}</TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Cost of Water']['Per month'] : ''}</TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Cost of Water']['Per Year'] : ''}</TableRowColumn>
 			</TableRow>
 			<TableRow >
 				<TableRowColumn>Cost of Waste Water</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
+				<TableRowColumn>{this.props.output_data ? this.props.output_data['Cost of Waste Water']['Per load'] : ''}</TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Cost of Waste Water']['Per week'] : ''}</TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Cost of Waste Water']['Per month'] : ''}</TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Cost of Waste Water']['Per Year'] : ''}</TableRowColumn>
 			</TableRow>
 			<TableRow >
-				<TableRowColumn>Cost of Electricity - Dryer </TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
+				<TableRowColumn>Cost of Electricity - Dryer</TableRowColumn>
+				<TableRowColumn>{this.props.output_data ? this.props.output_data['Cost of Electricity - Dryer']['Per load'] : ''}</TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Cost of Electricity - Dryer']['Per week'] : ''}</TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Cost of Electricity - Dryer']['Per month'] : ''}</TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Cost of Electricity - Dryer']['Per Year'] : ''}</TableRowColumn>
 			</TableRow>
 			<TableRow >
 				<TableRowColumn>Cost of replacing washing machine</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
+				<TableRowColumn>{this.props.output_data ? this.props.output_data['Cost of replacing washing machine']['Per load'] : ''}</TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Cost of replacing washing machine']['Per week'] : ''}</TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Cost of replacing washing machine']['Per month'] : ''}</TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Cost of replacing washing machine']['Per Year'] : ''}</TableRowColumn>
 			</TableRow>
 			<TableRow >
 				<TableRowColumn>Cost of replacing dryer</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
+				<TableRowColumn>{this.props.output_data ? this.props.output_data['Cost of replacing dryer']['Per load'] : ''}</TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Cost of replacing dryer']['Per week'] : ''}</TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Cost of replacing dryer']['Per month'] : ''}</TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Cost of replacing dryer']['Per Year'] : ''}</TableRowColumn>
 			</TableRow>
 			<TableRow >
 				<TableRowColumn>Total</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
+				<TableRowColumn>{this.props.output_data ? this.props.output_data['Total']['Per load'] : ''}</TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Total']['Per week'] : ''}</TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Total']['Per month'] : ''}</TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Total']['Per Year'] : ''}</TableRowColumn>
 			</TableRow>
           </TableBody>
           

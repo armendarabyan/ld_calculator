@@ -34,24 +34,24 @@ export default class Profit extends React.Component {
           displayRowCheckbox={false}>
 			<TableRow>
 				<TableRowColumn>Total gross earnings</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
+				<TableRowColumn>{this.props.output_data ? this.props.output_data['Total gross earnings']['Per load'] : ''}</TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Total gross earnings']['Per week'] : ''}</TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Total gross earnings']['Per month'] : ''}</TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Total gross earnings']['Per Year'] : ''}</TableRowColumn>
 			</TableRow>
 			<TableRow >
 				<TableRowColumn>Total cost</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
+				<TableRowColumn>{this.props.output_data ? this.props.output_data['Total cost']['Per load'] : ''}</TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Total cost']['Per week'] : ''}</TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Total cost']['Per month'] : ''}</TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Total cost']['Per Year'] : ''}</TableRowColumn>
 			</TableRow>
 			<TableRow >
 				<TableRowColumn>Net Profit</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
+				<TableRowColumn>{this.props.output_data ? this.props.output_data['Net Profit']['Per load'] : ''}</TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Net Profit']['Per week'] : ''}</TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Net Profit']['Per month'] : ''}</TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Net Profit']['Per Year'] : ''}</TableRowColumn>
 			</TableRow>
           </TableBody>
           

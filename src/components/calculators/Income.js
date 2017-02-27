@@ -32,25 +32,25 @@ export default class Income extends React.Component {
           </TableHeader>
           <TableBody displayRowCheckbox={false}>
 			<TableRow>
-				<TableRowColumn>Income from washing machines</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
+				<TableRowColumn>Income from washing machines </TableRowColumn>
+				<TableRowColumn>{this.props.output_data ? this.props.output_data['Income from washing machines']['Per load'] : ''} </TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Income from washing machines']['Per week'] : ''} </TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Income from washing machines']['Per month'] : ''} </TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Income from washing machines']['Per Year'] : ''} </TableRowColumn>
 			</TableRow>
 			<TableRow >
-				<TableRowColumn>Income from dryer</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
+				<TableRowColumn>Income from dryer </TableRowColumn>
+				<TableRowColumn>{this.props.output_data ? this.props.output_data['Total cost']['Per load'] : ''} </TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Total cost']['Per week'] : ''} </TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Total cost']['Per month'] : ''} </TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Total cost']['Per Year'] : ''} </TableRowColumn>
 			</TableRow>
 			<TableRow >
-				<TableRowColumn>Total</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
+				<TableRowColumn>Total </TableRowColumn>
+				<TableRowColumn>{this.props.output_data ? this.props.output_data['Total']['Per load'] : ''} </TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Total']['Per week'] : ''} </TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Total']['Per month'] : ''} </TableRowColumn>
+                <TableRowColumn>{this.props.output_data ? this.props.output_data['Total']['Per Year'] : ''} </TableRowColumn>
 			</TableRow>
           </TableBody>
           
