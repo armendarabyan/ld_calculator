@@ -22,3 +22,18 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+/*
+.cost-table-wrapper .header, .income-table-wrapper .header {
+    background: rgb(189, 214, 238);
+    width: 200px;
+}
+
+section {
+  background-color: rgb(195, 184, 184);
+}
+
+section div {
+  width: 900px;
+  margin:0 auto;
+}*/
+
