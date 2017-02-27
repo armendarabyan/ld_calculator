@@ -32,27 +32,27 @@ export default class Comparison extends React.Component {
           <TableBody displayRowCheckbox={false}>
 			<TableRow>
 				<TableRowColumn>Net profit per load</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
+				<TableRowColumn>{this.props.output_data ? this.props.output_data['Net profit per load']['New Appliances']: ''}</TableRowColumn>
+				<TableRowColumn>{this.props.output_data ? this.props.output_data['Net profit per load']['Old Appliances']: ''}</TableRowColumn>
+				<TableRowColumn>{this.props.output_data ? this.props.output_data['Net profit per load']['Average of old and new appliances']: ''}</TableRowColumn>
 			</TableRow>
 			<TableRow >
 				<TableRowColumn>Net profit per week</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
+				<TableRowColumn>{this.props.output_data ? this.props.output_data['Net profit per week']['New Appliances']: ''}</TableRowColumn>
+				<TableRowColumn>{this.props.output_data ? this.props.output_data['Net profit per week']['Old Appliances']: ''}</TableRowColumn>
+				<TableRowColumn>{this.props.output_data ? this.props.output_data['Net profit per week']['Average of old and new appliances']: ''}</TableRowColumn>
 			</TableRow>
 			<TableRow >
 				<TableRowColumn>Net profit per month</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
+				<TableRowColumn>{this.props.output_data ? this.props.output_data['Net profit per month']['New Appliances']: ''}</TableRowColumn>
+				<TableRowColumn>{this.props.output_data ? this.props.output_data['Net profit per month']['Old Appliances']: ''}</TableRowColumn>
+				<TableRowColumn>{this.props.output_data ? this.props.output_data['Net profit per month']['Average of old and new appliances']: ''}</TableRowColumn>
 			</TableRow>
 			<TableRow >
 				<TableRowColumn>Net profit per year</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
-				<TableRowColumn>test</TableRowColumn>
+				<TableRowColumn>{this.props.output_data ? this.props.output_data['Net profit per year']['New Appliances']: ''}</TableRowColumn>
+				<TableRowColumn>{this.props.output_data ? this.props.output_data['Net profit per year']['Old Appliances']: ''}</TableRowColumn>
+				<TableRowColumn>{this.props.output_data ? this.props.output_data['Net profit per year']['Average of old and new appliances']: ''}</TableRowColumn>
 			</TableRow>
           </TableBody>
           
