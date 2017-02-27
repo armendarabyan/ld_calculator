@@ -1,0 +1,66 @@
+{
+  "Balboa": {
+    "Lot size": 6017.8,
+    "Square ft": 5740,
+    "Year": 2008,
+    "Bed": 12,
+    "Baths": 8,
+    "Units": 4
+  },
+  "Victory": {
+    "Lot size": 6219.1,
+    "Square ft": 5780,
+    "Year": 2007,
+    "Bed": 12,
+    "Baths": 8,
+    "Units": 4
+  },
+  "Radford": {
+    "Lot size": 7881.9,
+    "Square ft": 5731,
+    "Year": 2007,
+    "Bed": 18,
+    "Baths": 12,
+    "Units": 6
+  },
+  "227th Street": {
+    "Lot size": 7202.6,
+    "Square ft": 3798,
+    "Year": 1952,
+    "Bed": 10,
+    "Baths": 5,
+    "Units": 6
+  },
+  "Agnes2": {
+    "Lot size": 8082.8,
+    "Square ft": 5830,
+    "Year": 2005,
+    "Bed": 17,
+    "Baths": 11,
+    "Units": 6
+  },
+  "Agnes1": {
+    "Lot size": 8132.7,
+    "Square ft": 4760,
+    "Year": 2004,
+    "Bed": 16,
+    "Baths": 10,
+    "Units": 6
+  },
+  "Sylvan": {
+    "Lot size": 8755.5,
+    "Square ft": 10700,
+    "Year": 2012,
+    "Bed": 19,
+    "Baths": 25,
+    "Units": 9
+  },
+  "Vanowen": {
+    "Lot size": 8321.8,
+    "Square ft": 15514,
+    "Year": 2011,
+    "Bed": 24,
+    "Baths": 20,
+    "Units": 10
+  }
+}

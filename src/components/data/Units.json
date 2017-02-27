@@ -1,0 +1,23 @@
+{
+  "Average cost of electricity per kwh": 0.21,
+  "Average price of water per gallon": 0.0090,
+  "Average washing machine capacity; in kg": 8.5,
+  "Average water consumption on old machine (gallons)": 30,
+  "Average water consumption per washing machine in gallons per kg (new machine)": 2.9,
+  "Average washing cycle time in minutes (old)": 77,
+  "Average washing cycle time in minutes (new)": 88,
+  "Average wattage of machine (new)": 700,
+  "Average wattage of washing machine (old)": 1000,
+  "Average drying time in minutes": 30,
+  "Average dryer wattage (new)": 4000,
+  "Average wattage of dryer (old)": 5000,
+  "Water use per week per unit": 57.31,
+  "Percentage using on site laundry": 0.829,
+  "Cost of new washing machine": 700,
+  "Washing machine life expectancy (years)": 10,
+  "Dryer life expectancy (years)": 12,
+  "Cost of new dryer": 700,
+  "Bedrooms per Unit": 1.5,
+  "People per bedroom": 1.5,
+  "Machines per unit": 3
+}

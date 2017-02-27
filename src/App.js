@@ -11,10 +11,13 @@ import Apartment from './components/others/Apartment'
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
+import ApartmentData from './components/data/Apartment.js';
+import UnitsData from './components/data/Units.js';
+console.log(UnitsData);
 
 
 // const FlatButtonExampleSimple = () => (
-  
+
 // );
 
 class App extends Component {
@@ -26,7 +29,7 @@ class App extends Component {
             tab:'calculator'
         };
     }
-  
+
   calculatorTab(event)
   {
     this.setState(()=>{
@@ -68,7 +71,7 @@ class App extends Component {
     let content = null;
     switch(tab){
         case 'calculator':
-            content = 
+            content =
             <div>
                 <section>
                     <div>
@@ -108,10 +111,10 @@ class App extends Component {
 
         break;
         case 'apartment':
-            content = 
+            content =
             <div>
                 <Apartment />
-            </div>    
+            </div>
         break;
     }
     return (
