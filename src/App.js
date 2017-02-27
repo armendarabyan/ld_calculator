@@ -17,8 +17,8 @@ import Toggle from 'material-ui/Toggle';
 
 import ApartmentData from './components/data/Apartment.js';
 import UnitsData from './components/data/Units.js';
-console.log(UnitsData);
-console.log(ApartmentData);
+import Calculator from './components/data/Calculator.js'; 
+
 
 class App extends Component {
 
@@ -185,12 +185,12 @@ class App extends Component {
     return (
         <MuiThemeProvider>
             <div className="App">
-                <div>
+                {/*<div>
                     <FlatButton onClick={this.calculatorTab.bind(this)} primary={true} label="Calculator" />
                     <FlatButton label="Units and references" primary={true} onClick={this.unitsTab.bind(this)} />
                     <FlatButton label="Bedroom calculator" primary={true} onClick={this.bedroomTab.bind(this)} />
                     <FlatButton label="Apartment data"  primary={true} onClick={this.apartmentTab.bind(this)}/>
-                </div>
+                </div>*/}
                 {content}
             </div>
         </MuiThemeProvider>
