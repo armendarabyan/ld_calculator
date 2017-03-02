@@ -1,8 +1,8 @@
 import JsonData from './Units.json';
 
-function Calculate(data) {
-  // data["Average loads per week per person"] = ;
-  // data["Machines in building"] = ;
+function CalculateUnits(inputs) {
+  var data = JsonData;
+  let {sqft, no_of_bedrooms, percentage_use_laundry, price_per_load_washing_machine, price_per_hour_dryer} = inputs;
   data["Average water used per load (gallons) (new machine)"] = data["Average washing machine capacity; in kg"] * data["Average water consumption per washing machine in gallons per kg (new machine)"];
   data["Cost of water per load (New Machine)"] = data["Average water used per load (gallons) (new machine)"] * data["Average price of water per gallon"];
   data["Cost of water per load (Old Machine)"] = data["Average water consumption on old machine (gallons)"] * data["Average price of water per gallon"];
@@ -17,15 +17,16 @@ function Calculate(data) {
   data["Average washing cycle time average new & old (hours)"] = data["Average load time new and old washing machine (minutes)"] / 60;
   data["Average washing cycle time (old) (hours)"] = data["Average washing cycle time in minutes (old)"] / 60;
   data["Average washing cycle time (new) (hours)"] = data["Average washing cycle time in minutes (new)"] / 60;
-  // data["Number of units"] = 0;
+  data["Number of units"] = no_of_bedrooms / 1.5;
   data["Loads done per week per unit"] = data["Water use per week per unit"] / data["Average water used per load (gallons) (new machine)"];
-  data["Cost to replace washing machines in building per year"] = (data["Cost of new washing machine"] / data["Washing machine life expectancy (years)"]) * data["Machines in building"];
-  // data["Cost to replace dryers in building per year "] = (data["Cost of new dryer"] / data["Dryer life expectancy (years)"]) * data["Machines in building"];
+  data["Machines in building"] = data['Number of units'] / data['Machines per unit'];
+  data["Cost to replace washing machines in building per year"] = data["Cost of new washing machine"] / data["Washing machine life expectancy (years)"] * data["Machines in building"];
+  data["Average loads per week per person"] = data["Loads done per week per unit"] / data['Bedrooms per Unit'] / data['People per bedroom'];
+  data["Cost to replace dryers in building per year"] = data["Cost of new dryer"] / data["Dryer life expectancy (years)"] * data["Machines in building"];
   // data["Loads per week"] = ;
 
   return data;
 }
 
-var final_data = Calculate(JsonData);
 
-export default final_data;
+export default CalculateUnits;
